@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include('include_front/head.php'); ?>
+<body>
+<div class="page-wrapper">
+
+<?php
+	$template = 1;
+	$template = @$_GET['tem'];
+	
+	if($template==2){
+		include('include_front/header/header_template2.php');
+	} else if($template==3){
+		include('include_front/header/header_template3.php');
+	} else if($template==4){
+		include('include_front/header/header_template4.php');
+	} else {
+		include('include_front/header/header_template1.php');
+	}
+	
+?>
+
+    <div class="inner-banner text-center">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <span>Our Services</span>
+                </li>
+            </ul><!-- /.breadcrumb -->
+            <h1>Our Services</h1>
+        </div><!-- /.container -->
+    </div><!-- /.inner-banner -->
+    
+    <section class="sec-pad cta-five home-five">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content">
+						<?php 
+								// ==============================================
+								//@ Home Us Page Content
+								//===============================================
+								$id = 4 ;
+								$login_page_content =  get_page_content($id,$conn,$wl_id);
+								$page_content  = str_replace("<p>&nbsp;</p>",'', $login_page_content['page_content']);
+								$page_content = str_replace("\r\n",'', $page_content);
+								
+							   if(!empty($login_page_content['page_content'])){
+								  echo  $page_content;  
+							    }
+						?>
+                        
+                    </div><!-- /.cta-content -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.black-shape-bg -->
+
+    <section class="service-style-five sec-pad">
+        <div class="container">
+            <div class="sec-title text-center">
+                <span>Services</span>
+                <h2>Our preferred Services</h2>
+            </div><!-- /.sec-title -->
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="single-service-five">
+                        <div class="image-box">
+                            <img src="include_front/assist/images/recharge.jpg" alt=""/>
+                            <div class="box">
+                                <a href="#" class="more-btn"><i class="fa fa-arrow-right"></i></a>
+                            </div><!-- /.box -->
+                        </div><!-- /.image-box -->
+                        <div class="text-box">
+                            <h3><a href="#">Recharge</a></h3>
+                            <p>We are provides customized recharge softwares for B2B recharge businesses. We offers the best all in one multi mobile recharge that works with all telecom software service providers . . . </p>
+                        </div><!-- /.text-box -->
+                    </div><!-- /.single-service-five -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="single-service-five">
+                        <div class="image-box">
+                            <img src="include_front/assist/images/aeps.jpg" alt=""/>
+                            <div class="box">
+                                <a href="#" class="more-btn"><i class="fa fa-arrow-right"></i></a>
+                            </div><!-- /.box -->
+                        </div><!-- /.image-box -->
+                        <div class="text-box">
+                            <h3><a href="#">AEPS</a></h3>
+                            <p>Our service offered by the National Payments Corporation of India to banks, financial institutions using 'AADHAAR'. AEPS stands for 'AADHAAR Enabled Payment System' . . .</p>
+                        </div><!-- /.text-box -->
+                    </div><!-- /.single-service-five -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="single-service-five">
+                        <div class="image-box">
+                            <img src="include_front/assist/images/bbps.jpg" alt=""/>
+                            <div class="box">
+                                <a href="#" class="more-btn"><i class="fa fa-arrow-right"></i></a>
+                            </div><!-- /.box -->
+                        </div><!-- /.image-box -->
+                        <div class="text-box">
+                            <h3><a href="#">Bill Payment</a></h3>
+                            <p>We are an online payment platform which utilizes the best technologies. Allows hassle-free payments through the web and mobile devices. It's secure, integrates easily and is cost-effective. </p>
+                        </div><!-- /.text-box -->
+                    </div><!-- /.single-service-five -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="single-service-five">
+                        <div class="image-box">
+                            <img src="include_front/assist/images/money-transfer.jpg" alt=""/>
+                            <div class="box">
+                                <a href="#" class="more-btn"><i class="fa fa-arrow-right"></i></a>
+                            </div><!-- /.box -->
+                        </div><!-- /.image-box -->
+                        <div class="text-box">
+                            <h3><a href="#">Money Transfer</a></h3>
+                            <p>We Launched Instant Domestic Money Transfer (DMT) Services. We DMT brings you the convenience of transferring money from your place of residence to any Bank account across the country . . . </p>
+                        </div><!-- /.text-box -->
+                    </div><!-- /.single-service-five -->
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.service-style-five -->
+
+
+    <section class="client-style-one">
+        <div class="container">
+            <div class="client-carousel-one owl-carousel owl-theme">
+                <div class="item">
+                    <img src="include_front/assist/images/icon1.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon2.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon3.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon4.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon5.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon6.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon7.png" />
+                </div><!-- /.item -->
+				<div class="item">
+                    <img src="include_front/assist/images/icon8.png" />
+                </div><!-- /.item -->
+                <div class="item">
+            </div><!-- /.client-carousel-one owl-carousel owl-theme -->
+        </div><!-- /.container -->
+    </section><!-- /.client-style-one -->
+<?php include('include_front/footer.php'); ?>
