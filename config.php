@@ -9,6 +9,9 @@ $headerArray = array( "x-api-key: skg#@!12#09", "netpaisapasskey: snetpaisaSW" )
 
 define("API_BASE_URL","https://www.netpaisa.com/nps/api/");
 
+
+//tetetetetet
+define("API_BASE_URL","https://www.netpaisa.com/nps/api/");
 /* Netpaisa Recharge API Links  */
 $netpaisa_get_network = API_BASE_URL."RECHARGEV2/get_network.php";
 $netpaisa_circle =  API_BASE_URL."RECHARGEV2/get_circle.php";

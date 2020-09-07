@@ -5,6 +5,8 @@
 <div class="page-wrapper">
 
 <?php
+
+<<<<<<HEAD<<<<<<
 	$template = 1;
 	$template = @$_GET['tem'];
 	
@@ -17,6 +19,20 @@
 	} else {
 		include('include_front/header/header_template1.php');
 	}
+	>>>>>>>>>>
+	
+	} else if($template==4){
+		include('include_front/header/header_template4.php');
+	} else {
+		include('include_front/header/header_template1.php');
+	}
+	============================================
+	
+	
+	
+	//include test file
+	
+	include('include_front/header/header_template1.php');
 	
 	
 ?>
