@@ -17,9 +17,7 @@
 	} else {
 		include('include_front/header/header_template1.php');
 	}
-	// new line added to test git
 	
-	include('include_front/header/header_template1.php');
 	
 ?>
 
